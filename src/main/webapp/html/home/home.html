@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="/js/jquery/jquery-3.0.0.min.js"></script>
+</head>
+<body background="/img/home.jpg">
+  <a href="/logout">登出</a>
+  <button type="button" onclick="getallUser()">获取用户</button>
+</body>
+<script type="text/javascript">
+    function getallUser(){
+    	$.ajax({
+    		url:"/register/registerNewUser"
+    	})
+    }
+</script>
+</html>
